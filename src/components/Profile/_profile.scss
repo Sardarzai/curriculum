@@ -1,0 +1,54 @@
+// ====================================Profile Component Styling Start============================//
+.app__profiles-container {
+  background-color: var(--white);
+  @include round-border(0.7rem);
+  width: 100%;
+  display: inline-block;
+  box-shadow: var(--box-shadow);
+  padding: 1rem 0;
+
+  // =============================Profile Title Styling Start====================//
+  .app__profile-title {
+    padding: 20px;
+
+    .app__title {
+      line-height: 1rem;
+      @include bold-text();
+    }
+    .app__text {
+      text-transform: uppercase;
+      @include p-text();
+    }
+  }
+  // =============================Profile Title Styling End!====================//
+
+  // =============================Profile Image Styling Start==========================//
+
+  .app__profile-img {
+    margin-top: -1rem;
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+    img {
+      width: 100%;
+    }
+  }
+  // =============================Profile Image Styling End!==========================//
+
+  // =============================Profile Information Styling Start==========================//
+
+  //profile information section start
+  .app__profile-info {
+    margin-left: 1rem;
+  }
+  // =============================Profile Information Styling End!==========================//
+
+  // =============================Profile Button Styling Start==========================//
+  .app__profile-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  // =============================Profile Button Styling End!==========================//
+}
+// ====================================Profile Component Styling End============================//

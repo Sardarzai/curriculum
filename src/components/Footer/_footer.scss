@@ -1,0 +1,19 @@
+.app__footer-container {
+  margin-bottom: 1rem;
+  display: flex;
+  background-color: var(--bg-footer);
+  color: var(--footer-content-color);
+  @include round-border(0.8rem);
+  box-shadow: var(--box-shadow);
+  min-height: 70px;
+  padding: 20px 25px;
+  display: flex;
+  // ======================Left side Column Start=================//
+  .app__footer-leftside {
+    margin-right: auto;
+    span {
+      color: var(--primary);
+    }
+  }
+  // ======================Left side Column End!=================//
+}

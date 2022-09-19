@@ -1,0 +1,139 @@
+/* =====================================About section started================================== */
+
+.app__about-container {
+  @include sections-space(2rem, 3rem);
+  .app__about-title {
+    @include head-text();
+  }
+}
+
+/**********************************---------About-END--------************************************/
+
+/* ===================================Services section started================================== */
+.app__services-container {
+  //============ services title styling section start==============//
+  .app__services-title {
+    @include head-text();
+    @include sections-space(0, 3rem);
+    .app__services-title-info {
+      display: flex;
+      flex-direction: column;
+      @include p-text();
+      color: var(--black);
+      text-align: center;
+    }
+  }
+  // ==============================END==============================//
+
+  //============ services Cards styling section start==============//
+  .app__services-items-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .app__services-items-card-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-self: normal;
+      flex-wrap: wrap;
+      padding: 1.5rem 0.7rem;
+      box-shadow: var(--box-shadow);
+      @include p-text();
+      span {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      &:hover {
+        cursor: pointer;
+        img {
+          filter: grayscale(1);
+        }
+      }
+      img {
+        width: 60px;
+      }
+
+      @media screen and (min-width: 2000px) {
+        // margin: 2rem 4rem;
+        img {
+          width: 320px;
+        }
+      }
+    }
+  }
+  // ==============================END==============================//
+}
+/**********************************---------Service-END--------*******************************/
+
+/* ============================Education and Experience section started=================== */
+
+.app__experience-container {
+  @include sections-space(3rem, 6rem);
+
+  .app__experience-title {
+    @include head-text();
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .app__experience-items-container {
+    margin-top: 4rem;
+  }
+}
+
+/**********************************---------Experience-END--------*******************************/
+
+/* ===================================Brands section started===================================== */
+.app__brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include sections-space(2rem, 5rem);
+  .app__brands-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin: 0.5rem;
+
+    img {
+      width: 6rem;
+    }
+  }
+}
+/**********************************---------Brands-END--------*******************************/
+
+// =================================Contact Section Start==================================//
+
+.app__contact-container {
+  @include sections-space(2rem, 6rem);
+  .app__contact-title {
+    @include sections-space(0, 3rem);
+    @include head-text();
+  }
+
+  .app__contact-form-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    @include p-text();
+    .title-span {
+      font-weight: bold;
+    }
+    .app__contact-form-socialMediaIcons {
+      display: flex;
+      .MuiSvgIcon-root {
+        color: var(--black);
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+// ===================================Contact Section End==================================//

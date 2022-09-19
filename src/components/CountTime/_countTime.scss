@@ -1,0 +1,32 @@
+// ============================================Count Time Styling Start=======================================//
+.app__countTime-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 3.7rem;
+  margin-top: -1rem;
+  @include transaction();
+  // ====================================Count Time Title Styling Start===============================//
+  .app__countTime-title {
+    color: var(--gray);
+    margin-right: 0.5rem;
+  }
+  // ====================================Count Time Title Styling End!===============================//
+
+  // =================================Count Time Counted Date Styling Start==========================//
+  .app__countTime-counted-Date-Container {
+    display: flex;
+    flex-direction: row;
+    color: var(--primary);
+    span {
+      margin-right: 0.3rem;
+      font-weight: bold;
+      .lable {
+        color: var(--gray);
+        font-weight: normal;
+      }
+    }
+  }
+  // =================================Count Time Counted Date Styling END==========================//
+}
+// ============================================Count Time Styling END=======================================//

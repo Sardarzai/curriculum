@@ -1,0 +1,49 @@
+//===================================font styling start!=====================================//
+@mixin font-properties() {
+  font-size: 1rem;
+}
+@mixin head-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  text-transform: capitalize;
+
+  span {
+    color: var(--primary);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+@mixin p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+@mixin bold-text {
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: left;
+  color: var(--black);
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
+
+//===================================font styling End!=====================================//

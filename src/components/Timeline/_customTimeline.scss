@@ -1,0 +1,61 @@
+.app_timeline-container {
+  margin-top: -3rem;
+
+  // ======================Timeline Header Section Stying Start ==================================//
+  .app__timeline-header {
+    min-height: 80px;
+    margin-left: -0.3rem;
+
+    .app__timeline-header-dot {
+      background-color: var(--primary);
+      text-align: center;
+      width: 37px;
+      height: 37px;
+    }
+
+    .app__timeline-header-title {
+      @include head-text();
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: -11rem;
+      margin-top: 1rem;
+    }
+  }
+  // ==============================================END=============================================//
+}
+
+//================================Timeline items Styling section Start===========================//
+.app__timeline-items {
+  padding-left: 1.7rem;
+
+  .app__timeline-items-separator-padding {
+    .app__timeline-items-dot {
+      padding: 2px;
+      border-color: var(--primary);
+    }
+  }
+  .app__timeline-items-content {
+    @include p-text();
+    display: flex;
+    flex-direction: column;
+    .app__timeline-items-title {
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .app__timeline-items-subtitle {
+      font-size: 0.9rem;
+    }
+    .app__timeline-items-year {
+      color: var(--gray);
+      font-size: 0.7rem;
+      padding-bottom: 0.5rem;
+    }
+    .app__timeline-items-info {
+      text-align: justify;
+      padding-bottom: 0.9rem;
+    }
+  }
+}
+// ==============================================END=============================================//

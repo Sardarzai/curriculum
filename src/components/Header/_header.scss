@@ -1,0 +1,81 @@
+.app__header-container {
+  background: var(--white);
+  padding: 0;
+  @include sections-space(0, 1.7rem);
+  @include round-border(0.8rem);
+  box-shadow: var(--box-shadow);
+  .container {
+    padding: 0;
+    margin-left: 0;
+  }
+  // ================================Nav Brand Styling Start===============================//
+  .app__header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-bottom-left-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+    margin-right: 1rem;
+    .MuiSvgIcon-root {
+      color: var(--white);
+      font-size: 2.4rem;
+      padding-left: 1rem;
+      @include transaction();
+      &:hover {
+        cursor: pointer;
+        font-size: 2.7rem;
+      }
+    }
+  }
+
+  // ================================Nav Brand Styling End!===============================//
+
+  // ================================Navbar Styling Start===============================//
+  .app__header-navbar {
+    display: flex;
+    margin-right: auto;
+    a {
+      text-transform: uppercase;
+      color: var(--black);
+      margin-right: 1rem;
+      text-decoration: none;
+      @include transaction();
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    .app__header-navbar-active {
+      @include transaction();
+      color: var(--primary);
+    }
+  }
+  // ================================Navbar Styling End!===============================//
+
+  // ============================Right Side Navbar Styling Start=======================//
+  .app__header-rightside-constainer {
+    margin-right: 2rem;
+    display: flex;
+    // ============================Social Media Icons Styling Start=======================//
+    .app__header-rightside-socialIcons {
+      a {
+        .MuiSvgIcon-root {
+          color: var(--black);
+          font-size: 1rem;
+          margin-right: 0.3rem;
+          @include transaction();
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+          }
+        }
+      }
+    }
+
+    // ============================Social Media Icons Styling END!=======================//
+  }
+  // ============================Right Side Navbar Styling END!=======================//
+}

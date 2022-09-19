@@ -1,0 +1,30 @@
+.app__toggle-container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--primary);
+  @include round-border(1rem);
+  padding: 1px;
+
+  .MuiSvgIcon-root {
+    font-size: 1rem;
+    margin-right: 1px;
+  }
+  // padding: 0.1rem;
+  // =================All Elements inside Toggle Container Styling Start=====================//
+  cursor: pointer;
+  * {
+    width: 1rem;
+    height: 1rem;
+    color: var(--primary);
+  }
+
+  // =================All Elements inside Toggle Container Styling End=====================//
+  // ==========================Button Styling Start=====================//
+  .app__toggle-button {
+    background-color: var(--primary);
+    @include round-border(100%);
+    position: relative;
+    margin-right: -1rem;
+  }
+  // ==========================Button Styling End=====================//
+}

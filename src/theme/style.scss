@@ -1,0 +1,62 @@
+/* =======================Importing all the scss files in the project Start!===================== */
+@import './variables';
+@import './fontStyle';
+@import './resuing';
+@import '../components/Button/appButtons';
+@import '../components/Header/header';
+@import '../components/Profile/profile';
+@import '../components/Timeline/customTimeline';
+@import '../components/Footer/footer';
+@import '../pages/Resume/resume';
+@import '../pages//Portfolio/portfolio';
+@import '../components/Toggle/toggle';
+@import '../components/CountTime/countTime';
+/* =======================Importing all the scss files in the project End!===================== */
+// /*============================================== google fonts link========================== */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,700&family=Kdam+Thmor+Pro&family=Poppins:wght@200;400;600&display=swap');
+
+/* A global style. It is setting the default font family for all elements to Tahoma, Verdana,
+sans-serif. It is also setting the default padding and margin to 0. */
+* {
+  font-family: Tahoma, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Setting the background color of the body to the value of the variable --bg-light. */
+body {
+  background: var(--bg-light);
+  @include component-container();
+}
+
+/* Setting the color of the icon to white and when the user hovers over the icon, the color changes to
+primary. and is default for icons */
+.MuiSvgIcon-root {
+  color: var(--white);
+  &:hover {
+    cursor: pointer;
+    color: var(--primary);
+  }
+}
+
+/* Hiding the default timeline icon. */
+.MuiTimelineItem-missingOppositeContent::before {
+  display: none;
+}
+
+/* Hiding the default timeline icon. */
+.MuiTimelineItem-root {
+  min-height: 0px;
+}
+
+/* Setting the default font family for all elements to Tahoma, Verdana,
+sans-serif. It is also setting the default padding and margin to 0. */
+.app__pages-container {
+  min-height: 80vh;
+  margin-bottom: 1.5rem;
+  background-color: var(--white);
+  padding: 2rem 4rem;
+  @include p-text();
+  box-shadow: var(--box-shadow);
+  @include round-border(0.7rem);
+}

@@ -1,0 +1,57 @@
+// ================================App Buttons Styling Start=========================//
+.app__buttons {
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 50px;
+  padding: 0.2rem 1rem;
+  line-height: 35px;
+  min-width: 100px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //title here
+  .app__buttons-title {
+    @include p-text();
+    // color: var(--white);
+  }
+
+  // =======================When Buttons Mouse Hover Styling Start========================//
+  &:hover {
+    transition: all 5s ease-in-out;
+    cursor: pointer;
+    //title here
+    .app__buttons-title {
+      color: var(--white);
+    }
+    //icons section here
+    .app__buttons-icon-container {
+      .MuiSvgIcon-root {
+        color: var(--primary);
+        font-weight: bold;
+      }
+    }
+  }
+  // =======================When Buttons Mouse Hover Styling End! ========================//
+
+  // ================================App Buttons Icon Styling Start=========================//
+  .app__buttons-icon-container {
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 50px;
+    height: 27px;
+    width: 27px;
+    margin-left: 1rem;
+    line-height: 29px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .MuiSvgIcon-root {
+      font-size: 16px;
+      color: var(--black);
+    }
+  }
+  // ================================App Buttons Icon Styling End=========================//
+}
+// ================================App Buttons Styling End!=========================//

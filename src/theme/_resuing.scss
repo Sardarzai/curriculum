@@ -1,0 +1,20 @@
+/* A mixin that is used to set the border-radius of a component. */
+@mixin round-border($size) {
+  border-radius: $size;
+}
+
+/* A mixin that is used to set the margin-top and margin-bottom of a component. */
+@mixin sections-space($topSpace, $bottomSpace) {
+  margin-top: $topSpace;
+  margin-bottom: $bottomSpace;
+}
+
+/* A mixin that is used to set the transition of a component to 1 second. */
+@mixin transaction {
+  transition: all 1s ease-in-out;
+}
+
+/* A mixin that is used to set the margin-top of a component to 2rem. */
+@mixin component-container {
+  margin-top: 2rem;
+}

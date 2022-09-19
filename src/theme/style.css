@@ -1,0 +1,779 @@
+/* =======================Importing all the scss files in the project Start!===================== */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,700&family=Kdam+Thmor+Pro&family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --primary: #5933eb;
+  --black: #1b1b1b;
+  --gray: #676767;
+  --white: #ffffff;
+  --bg-light: #d3d5e4;
+  --bg-footer: #201a30;
+  --footer-content-color: #ffffff;
+  --box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+}
+
+/* A mixin that is used to set the border-radius of a component. */
+/* A mixin that is used to set the margin-top and margin-bottom of a component. */
+/* A mixin that is used to set the transition of a component to 1 second. */
+/* A mixin that is used to set the margin-top of a component to 2rem. */
+.app__buttons {
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 50px;
+  padding: 0.2rem 1rem;
+  line-height: 35px;
+  min-width: 100px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__buttons .app__buttons-title {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .app__buttons .app__buttons-title {
+    font-size: 1.75rem;
+  }
+}
+.app__buttons:hover {
+  transition: all 5s ease-in-out;
+  cursor: pointer;
+}
+.app__buttons:hover .app__buttons-title {
+  color: var(--white);
+}
+.app__buttons:hover .app__buttons-icon-container .MuiSvgIcon-root {
+  color: var(--primary);
+  font-weight: bold;
+}
+.app__buttons .app__buttons-icon-container {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 50px;
+  height: 27px;
+  width: 27px;
+  margin-left: 1rem;
+  line-height: 29px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__buttons .app__buttons-icon-container .MuiSvgIcon-root {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.app__header-container {
+  background: var(--white);
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1.7rem;
+  border-radius: 0.8rem;
+  box-shadow: var(--box-shadow);
+}
+.app__header-container .container {
+  padding: 0;
+  margin-left: 0;
+}
+.app__header-container .app__header-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-bottom-left-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+  margin-right: 1rem;
+}
+.app__header-container .app__header-brand .MuiSvgIcon-root {
+  color: var(--white);
+  font-size: 2.4rem;
+  padding-left: 1rem;
+  transition: all 1s ease-in-out;
+}
+.app__header-container .app__header-brand .MuiSvgIcon-root:hover {
+  cursor: pointer;
+  font-size: 2.7rem;
+}
+.app__header-container .app__header-navbar {
+  display: flex;
+  margin-right: auto;
+}
+.app__header-container .app__header-navbar a {
+  text-transform: uppercase;
+  color: var(--black);
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: all 1s ease-in-out;
+}
+.app__header-container .app__header-navbar a:hover {
+  color: var(--primary);
+}
+.app__header-container .app__header-navbar .app__header-navbar-active {
+  transition: all 1s ease-in-out;
+  color: var(--primary);
+}
+.app__header-container .app__header-rightside-constainer {
+  margin-right: 2rem;
+  display: flex;
+}
+.app__header-container .app__header-rightside-constainer .app__header-rightside-socialIcons a .MuiSvgIcon-root {
+  color: var(--black);
+  font-size: 1rem;
+  margin-right: 0.3rem;
+  transition: all 1s ease-in-out;
+}
+.app__header-container .app__header-rightside-constainer .app__header-rightside-socialIcons a .MuiSvgIcon-root:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.app__profiles-container {
+  background-color: var(--white);
+  border-radius: 0.7rem;
+  width: 100%;
+  display: inline-block;
+  box-shadow: var(--box-shadow);
+  padding: 1rem 0;
+}
+.app__profiles-container .app__profile-title {
+  padding: 20px;
+}
+.app__profiles-container .app__profile-title .app__title {
+  line-height: 1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: left;
+  color: var(--black);
+}
+@media screen and (min-width: 2000px) {
+  .app__profiles-container .app__profile-title .app__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__profiles-container .app__profile-title .app__title {
+    font-size: 0.9rem;
+  }
+}
+.app__profiles-container .app__profile-title .app__text {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .app__profiles-container .app__profile-title .app__text {
+    font-size: 1.75rem;
+  }
+}
+.app__profiles-container .app__profile-img {
+  margin-top: -1rem;
+  -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+  clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+}
+.app__profiles-container .app__profile-img img {
+  width: 100%;
+}
+.app__profiles-container .app__profile-info {
+  margin-left: 1rem;
+}
+.app__profiles-container .app__profile-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.app_timeline-container {
+  margin-top: -3rem;
+}
+.app_timeline-container .app__timeline-header {
+  min-height: 80px;
+  margin-left: -0.3rem;
+}
+.app_timeline-container .app__timeline-header .app__timeline-header-dot {
+  background-color: var(--primary);
+  text-align: center;
+  width: 37px;
+  height: 37px;
+}
+.app_timeline-container .app__timeline-header .app__timeline-header-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: -11rem;
+  margin-top: 1rem;
+}
+.app_timeline-container .app__timeline-header .app__timeline-header-title span {
+  color: var(--primary);
+}
+@media screen and (min-width: 2000px) {
+  .app_timeline-container .app__timeline-header .app__timeline-header-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app_timeline-container .app__timeline-header .app__timeline-header-title {
+    font-size: 2rem;
+  }
+}
+
+.app__timeline-items {
+  padding-left: 1.7rem;
+}
+.app__timeline-items .app__timeline-items-separator-padding .app__timeline-items-dot {
+  padding: 2px;
+  border-color: var(--primary);
+}
+.app__timeline-items .app__timeline-items-content {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 2000px) {
+  .app__timeline-items .app__timeline-items-content {
+    font-size: 1.75rem;
+  }
+}
+.app__timeline-items .app__timeline-items-content .app__timeline-items-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.app__timeline-items .app__timeline-items-content .app__timeline-items-subtitle {
+  font-size: 0.9rem;
+}
+.app__timeline-items .app__timeline-items-content .app__timeline-items-year {
+  color: var(--gray);
+  font-size: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+.app__timeline-items .app__timeline-items-content .app__timeline-items-info {
+  text-align: justify;
+  padding-bottom: 0.9rem;
+}
+
+.app__footer-container {
+  margin-bottom: 1rem;
+  display: flex;
+  background-color: var(--bg-footer);
+  color: var(--footer-content-color);
+  border-radius: 0.8rem;
+  box-shadow: var(--box-shadow);
+  min-height: 70px;
+  padding: 20px 25px;
+  display: flex;
+}
+.app__footer-container .app__footer-leftside {
+  margin-right: auto;
+}
+.app__footer-container .app__footer-leftside span {
+  color: var(--primary);
+}
+
+/* =====================================About section started================================== */
+.app__about-container {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.app__about-container .app__about-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.app__about-container .app__about-title span {
+  color: var(--primary);
+}
+@media screen and (min-width: 2000px) {
+  .app__about-container .app__about-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__about-container .app__about-title {
+    font-size: 2rem;
+  }
+}
+
+/**********************************---------About-END--------************************************/
+/* ===================================Services section started================================== */
+.app__services-container .app__services-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+.app__services-container .app__services-title span {
+  color: var(--primary);
+}
+@media screen and (min-width: 2000px) {
+  .app__services-container .app__services-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__services-container .app__services-title {
+    font-size: 2rem;
+  }
+}
+.app__services-container .app__services-title .app__services-title-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+  color: var(--black);
+  text-align: center;
+}
+@media screen and (min-width: 2000px) {
+  .app__services-container .app__services-title .app__services-title-info {
+    font-size: 1.75rem;
+  }
+}
+.app__services-container .app__services-items-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.app__services-container .app__services-items-container .app__services-items-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: normal;
+  flex-wrap: wrap;
+  padding: 1.5rem 0.7rem;
+  box-shadow: var(--box-shadow);
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .app__services-container .app__services-items-container .app__services-items-card-container {
+    font-size: 1.75rem;
+  }
+}
+.app__services-container .app__services-items-container .app__services-items-card-container span {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.app__services-container .app__services-items-container .app__services-items-card-container:hover {
+  cursor: pointer;
+}
+.app__services-container .app__services-items-container .app__services-items-card-container:hover img {
+  filter: grayscale(1);
+}
+.app__services-container .app__services-items-container .app__services-items-card-container img {
+  width: 60px;
+}
+@media screen and (min-width: 2000px) {
+  .app__services-container .app__services-items-container .app__services-items-card-container img {
+    width: 320px;
+  }
+}
+
+/**********************************---------Service-END--------*******************************/
+/* ============================Education and Experience section started=================== */
+.app__experience-container {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+.app__experience-container .app__experience-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.app__experience-container .app__experience-title span {
+  color: var(--primary);
+}
+@media screen and (min-width: 2000px) {
+  .app__experience-container .app__experience-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__experience-container .app__experience-title {
+    font-size: 2rem;
+  }
+}
+.app__experience-container .app__experience-items-container {
+  margin-top: 4rem;
+}
+
+/**********************************---------Experience-END--------*******************************/
+/* ===================================Brands section started===================================== */
+.app__brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.app__brands-container .app__brands-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.5rem;
+}
+.app__brands-container .app__brands-item img {
+  width: 6rem;
+}
+
+/**********************************---------Brands-END--------*******************************/
+.app__contact-container {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+.app__contact-container .app__contact-title {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.app__contact-container .app__contact-title span {
+  color: var(--primary);
+}
+@media screen and (min-width: 2000px) {
+  .app__contact-container .app__contact-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__contact-container .app__contact-title {
+    font-size: 2rem;
+  }
+}
+.app__contact-container .app__contact-form-info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .app__contact-container .app__contact-form-info-container {
+    font-size: 1.75rem;
+  }
+}
+.app__contact-container .app__contact-form-info-container .title-span {
+  font-weight: bold;
+}
+.app__contact-container .app__contact-form-info-container .app__contact-form-socialMediaIcons {
+  display: flex;
+}
+.app__contact-container .app__contact-form-info-container .app__contact-form-socialMediaIcons .MuiSvgIcon-root {
+  color: var(--black);
+}
+.app__contact-container .app__contact-form-info-container .app__contact-form-socialMediaIcons .MuiSvgIcon-root:hover {
+  color: var(--primary);
+}
+
+.app__work-container {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .app__work-container {
+    font-size: 1.75rem;
+  }
+}
+.app__work-container .app__work-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.app__work-container .app__work-title span {
+  color: var(--primary);
+}
+@media screen and (min-width: 2000px) {
+  .app__work-container .app__work-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__work-container .app__work-title {
+    font-size: 2rem;
+  }
+}
+.app__work-container .app__work-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.app__work-container .app__work-filter .app__work-filter-item {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-secondary);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+}
+.app__work-container .app__work-filter .app__work-filter-item:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: var(--primary);
+}
+@media screen and (min-width: 2000px) {
+  .app__work-container .app__work-filter .app__work-filter-item {
+    padding: 1rem 2rem;
+    border-radius: 0.85rem;
+  }
+}
+.app__work-container .app__work-filter .item-active {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: var(--primary);
+}
+.app__work-container .app__work-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+.app__work-container .app__work-portfolio .app__work-item {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+  align-self: normal;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+@media screen and (min-width: 2000px) {
+  .app__work-container .app__work-portfolio .app__work-item {
+    width: 470px;
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .app__work-container .app__work-portfolio .app__work-item {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-img {
+  width: 100%;
+  height: 230px;
+  position: relative;
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 2000px) {
+  .app__work-container .app__work-portfolio .app__work-item .app__work-img {
+    height: 350px;
+  }
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-content .title-info {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: left;
+  color: var(--black);
+}
+@media screen and (min-width: 2000px) {
+  .app__work-container .app__work-portfolio .app__work-item .app__work-content .title-info {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__work-container .app__work-portfolio .app__work-item .app__work-content .title-info {
+    font-size: 0.9rem;
+  }
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-content .title-info .title {
+  text-align: center;
+  margin-top: 1rem;
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-content .title-info .tag {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  background-color: var(--white);
+  top: -25px;
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-content .tech-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: auto;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-align: center;
+}
+.app__work-container .app__work-portfolio .app__work-item .app__work-content .tech-info span {
+  margin-top: 0.8rem;
+  color: var(--black);
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.app__toggle-container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--primary);
+  border-radius: 1rem;
+  padding: 1px;
+  cursor: pointer;
+}
+.app__toggle-container .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-right: 1px;
+}
+.app__toggle-container * {
+  width: 1rem;
+  height: 1rem;
+  color: var(--primary);
+}
+.app__toggle-container .app__toggle-button {
+  background-color: var(--primary);
+  border-radius: 100%;
+  position: relative;
+  margin-right: -1rem;
+}
+
+.app__countTime-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 3.7rem;
+  margin-top: -1rem;
+  transition: all 1s ease-in-out;
+}
+.app__countTime-container .app__countTime-title {
+  color: var(--gray);
+  margin-right: 0.5rem;
+}
+.app__countTime-container .app__countTime-counted-Date-Container {
+  display: flex;
+  flex-direction: row;
+  color: var(--primary);
+}
+.app__countTime-container .app__countTime-counted-Date-Container span {
+  margin-right: 0.3rem;
+  font-weight: bold;
+}
+.app__countTime-container .app__countTime-counted-Date-Container span .lable {
+  color: var(--gray);
+  font-weight: normal;
+}
+
+/* =======================Importing all the scss files in the project End!===================== */
+/* A global style. It is setting the default font family for all elements to Tahoma, Verdana,
+sans-serif. It is also setting the default padding and margin to 0. */
+* {
+  font-family: Tahoma, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Setting the background color of the body to the value of the variable --bg-light. */
+body {
+  background: var(--bg-light);
+  margin-top: 2rem;
+}
+
+/* Setting the color of the icon to white and when the user hovers over the icon, the color changes to
+primary. and is default for icons */
+.MuiSvgIcon-root {
+  color: var(--white);
+}
+.MuiSvgIcon-root:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+/* Hiding the default timeline icon. */
+.MuiTimelineItem-missingOppositeContent::before {
+  display: none;
+}
+
+/* Hiding the default timeline icon. */
+.MuiTimelineItem-root {
+  min-height: 0px;
+}
+
+/* Setting the default font family for all elements to Tahoma, Verdana,
+sans-serif. It is also setting the default padding and margin to 0. */
+.app__pages-container {
+  min-height: 80vh;
+  margin-bottom: 1.5rem;
+  background-color: var(--white);
+  padding: 2rem 4rem;
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--black);
+  line-height: 1.5;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.7rem;
+}
+@media screen and (min-width: 2000px) {
+  .app__pages-container {
+    font-size: 1.75rem;
+  }
+}/*# sourceMappingURL=style.css.map */
