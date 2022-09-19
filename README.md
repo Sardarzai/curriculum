@@ -2,10 +2,10 @@ Hello dear sir/madam hope you are doing well,
 As with same of your Challenge build this complete dynamic and responsive web CV application. The design and events structured in very simple method that very one can read and if they want to changes, they can find each section quickly because I describe very thing very clearly.
 I divided the components, pages and files in different folders and section which help us to find components or files easily and also inside every component I put the comments which also help you that to check which component, variable, state hook and so on are used for.
 Note:
-Because It’s was just challenge in this case, I did not make the documentation of the application in real project I’m going to create documentation as well. And the code styling and naming I properly following the team guide.
+Because It’s was just Solution in that case, I did not make the documentation of the application in real project I’m going to create documentation as well. And the code styling and naming I properly following the team guide.
 
 Describing the application in short
-Related to you challenge this application has all those requirements that you send me in PDF file. But I put some extra.
+Related to your challenge this application has all those requirements that you send me in PDF file. But I put some extra.
 
 1. Components:
    a. This application has multiple components which are located inside component folder.
@@ -34,8 +34,7 @@ Technical Constraints
 6. I used this for Time counting.
 
 Note:
-If I messed something that you mentioned and I did not , do that kindly inform me about I do that as well.
-Also one thing that I want say in feature if You hire me I will build any type project that you want with the help of you good team.
+If I messed something that you mentioned and I did not that so inform me about that, I will do ASAP.
 
 Thank you!
 Sardarzai
